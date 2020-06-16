@@ -2,9 +2,9 @@
 
 namespace App\Models;
 
-use Specialtactics\L5Api\Models\RestfulModel;
+use Illuminate\Database\Eloquent\Model;
 
-class BaseModel extends RestfulModel
+class BaseModel extends Model
 {
     /*
      * Add your own base customisation here

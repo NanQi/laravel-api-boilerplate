@@ -2,7 +2,10 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\EnvLocal;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
+
+
 
 class Kernel extends HttpKernel
 {
@@ -39,7 +42,6 @@ class Kernel extends HttpKernel
         ],
 
         'api' => [
-            'snake_case',
             'throttle:60,1',
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
@@ -63,8 +65,9 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
-        'snake_case' => \Specialtactics\L5Api\Http\Middleware\SnakeCaseInputParameterKeys::class,
-        'check_role' => \Specialtactics\L5Api\Http\Middleware\CheckUserRole::class,
+
+        //env-local
+        'env.local' => EnvLocal::class,
     ];
 
     /**

@@ -2,8 +2,7 @@
 
 namespace App\Exceptions;
 
-use Specialtactics\L5Api\Exceptions\RestfulApiExceptionHandler;
-
+use Dingo\Api\Exception\Handler;
 /**
  * This class extends the Dingo API Exception Handler, and can be used to modify it's functionality, if required
  *
@@ -11,6 +10,6 @@ use Specialtactics\L5Api\Exceptions\RestfulApiExceptionHandler;
  *
  * Class ApiHandler
  */
-class ApiExceptionHandler extends RestfulApiExceptionHandler
+class ApiExceptionHandler extends Handler
 {
 }

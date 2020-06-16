@@ -2,8 +2,8 @@
 
 namespace App\Transformers;
 
-use Specialtactics\L5Api\Transformers\RestfulTransformer;
+use League\Fractal\TransformerAbstract;
 
-class BaseTransformer extends RestfulTransformer
+class BaseTransformer extends TransformerAbstract
 {
 }

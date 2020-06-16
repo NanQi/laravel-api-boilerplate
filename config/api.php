@@ -215,19 +215,7 @@ return [
 
     'formats' => [
 
-        'json' => Specialtactics\L5Api\Http\Response\Format\Json::class,
+        'json' => \Dingo\Api\Http\Response\Format\Json::class,
 
     ],
-
-    'formatsOptions' => [
-
-        'json' => [
-            'pretty_print' => env('API_JSON_FORMAT_PRETTY_PRINT_ENABLED', false),
-            'indent_style' => env('API_JSON_FORMAT_INDENT_STYLE', 'space'),
-            'indent_size' => env('API_JSON_FORMAT_INDENT_SIZE', 2),
-        ],
-        'caseType' => env('API_CASE_TYPE', 'camel-case'),
-        'transform_keys_levels' => env('API_TRANSFORM_KEYS_LEVELS', null),
-    ],
-
 ];
