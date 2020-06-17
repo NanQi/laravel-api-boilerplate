@@ -17,7 +17,8 @@
         "fruitcake/laravel-cors": "^1.0",
         "guzzlehttp/guzzle": "^6.3",
         "laravel/framework": "^7.0",
-        "laravel/tinker": "^2.4"
+        "laravel/tinker": "^2.4",
+        "lcobucci/jwt": "^3.3"
     },
     "require-dev": {
         "darkaonline/l5-swagger" : "^7.0",

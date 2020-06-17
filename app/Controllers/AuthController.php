@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace App\Controllers;
 
-use App\Http\Controllers\Controller;
+use App\Hope\Controllers\BaseController;
+use App\Hope\Services\JwtService;
 
-class AuthController extends Controller
+class AuthController extends BaseController
 {
     /**
      * @OA\Get(
@@ -51,4 +52,8 @@ class AuthController extends Controller
      * @return Response
      * @throws \Throwable
      */
+    public function token(JwtService $jwtService)
+    {
+        return $jwtService->getToken(1);
+    }
 }

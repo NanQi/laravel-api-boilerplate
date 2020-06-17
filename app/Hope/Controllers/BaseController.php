@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Hope\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
+use Illuminate\Routing\Controller;
 
 
 /**
@@ -34,7 +35,7 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
  */
 
 
-class Controller extends \Illuminate\Routing\Controller
+class BaseController extends Controller
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }
