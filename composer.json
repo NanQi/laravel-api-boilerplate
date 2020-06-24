@@ -18,7 +18,8 @@
         "guzzlehttp/guzzle": "^6.3",
         "laravel/framework": "^7.0",
         "laravel/tinker": "^2.4",
-        "lcobucci/jwt": "^3.3"
+        "lcobucci/jwt": "^3.3",
+      "ext-openssl": "*"
     },
     "require-dev": {
         "darkaonline/l5-swagger" : "^7.0",

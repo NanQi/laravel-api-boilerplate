@@ -3,9 +3,8 @@
 namespace App\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
-use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
-class Kernel extends ConsoleKernel
+class Kernel extends \App\Hope\Console\Kernel
 {
     /**
      * The Artisan commands provided by your application.
