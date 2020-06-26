@@ -215,7 +215,7 @@ return [
 
     'formats' => [
 
-        'json' => \Dingo\Api\Http\Response\Format\Json::class,
+        'json' => \App\Hope\Overwrite\JsonFormat::class,
 
     ],
 ];

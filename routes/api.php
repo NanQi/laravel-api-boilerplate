@@ -1,6 +1,7 @@
 <?php
 
 use App\Controllers\AuthController;
+use App\Controllers\TestController;
 use Dingo\Api\Routing\Router;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -29,4 +30,5 @@ $api->version('v1', ['middleware' => ['api']], function (Router $api) {
 
     /** @var Router $api */
     $api->get('/token', [AuthController::class, 'token']);
+    $api->get('/test', [TestController::class, 'test']);
 });
