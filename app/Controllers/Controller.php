@@ -1,13 +1,10 @@
 <?php
 
-namespace App\Hope\Controllers;
 
-use Dingo\Api\Routing\Helpers;
-use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
-use Illuminate\Foundation\Bus\DispatchesJobs;
-use Illuminate\Foundation\Validation\ValidatesRequests;
-use Illuminate\Routing\Controller;
+namespace App\Controllers;
 
+
+use NanQi\Hope\Controllers\BaseController;
 
 /**
  * @OA\Info(
@@ -34,10 +31,7 @@ use Illuminate\Routing\Controller;
  *     url="http://php-api.youyag.com/doc"
  * )
  */
-
-
-class BaseController extends Controller
+class Controller extends BaseController
 {
-    use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
-    use Helpers;
+
 }

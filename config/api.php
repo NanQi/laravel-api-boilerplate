@@ -1,5 +1,7 @@
 <?php
 
+use Dingo\Api\Http\Response\Format\Json;
+
 return [
 
     /*
@@ -32,7 +34,7 @@ return [
     |
     */
 
-    'subtype' => env('API_SUBTYPE', ''),
+    'subtype' => env('API_SUBTYPE', 'api'),
 
     /*
     |--------------------------------------------------------------------------
@@ -215,7 +217,7 @@ return [
 
     'formats' => [
 
-        'json' => \App\Hope\Overwrite\JsonFormat::class,
+        'json' => Json::class
 
     ],
 ];

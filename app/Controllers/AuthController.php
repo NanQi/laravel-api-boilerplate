@@ -2,10 +2,10 @@
 
 namespace App\Controllers;
 
-use App\Hope\Controllers\BaseController;
-use App\Hope\Services\JwtService;
 
-class AuthController extends BaseController
+use NanQi\Hope\Services\JwtService;
+
+class AuthController extends Controller
 {
     /**
      * @OA\Get(

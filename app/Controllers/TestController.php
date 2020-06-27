@@ -2,12 +2,10 @@
 
 namespace App\Controllers;
 
-use App\Hope\Controllers\BaseController;
-use App\Hope\Services\JwtService;
-use App\Hope\Transformers\BaseTransformer;
 use App\Models\UserModel;
+use NanQi\Hope\Hope;
 
-class TestController extends BaseController
+class TestController extends Controller
 {
     public function test()
     {

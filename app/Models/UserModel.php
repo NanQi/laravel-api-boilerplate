@@ -2,9 +2,9 @@
 
 namespace App\Models;
 
-use App\Hope\Models\BaseModel;
-use App\Hope\Traits\ModelEncryptionTrait;
 use Illuminate\Support\Facades\Hash;
+use NanQi\Hope\Models\BaseModel;
+use NanQi\Hope\Traits\ModelEncryptionTrait;
 
 class UserModel extends BaseModel
 {
